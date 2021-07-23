@@ -1,0 +1,926 @@
+/*Footer*/
+footer {
+  width: 100%;
+  background: black;
+  background: linear-gradient(180deg, black 50%, #2d2d2d 100%); }
+  footer ul {
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    left: 0; }
+    footer ul li {
+      margin: 20px; }
+      footer ul li a {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: bold;
+        color: #c9c9c9;
+        text-decoration: none; }
+
+footer .widget_text {
+  margin: 5px 0 5px 0; }
+
+/*Fin del Footer*/
+/*Articulos de la seccion de Gaming*/
+.seccionGaming {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: left;
+  padding-bottom: 10px; }
+  .seccionGaming article {
+    background-color: black;
+    padding: 10px;
+    margin: 10px 5px;
+    width: 80%;
+    border: solid 4px white; }
+    .seccionGaming article p {
+      padding: 5px 20px;
+      margin-left: 20px; }
+    .seccionGaming article img {
+      width: 240px;
+      height: 170px;
+      float: left;
+      margin-right: 15px; }
+
+/*Fin de la seccion de Articulos de Gaming*/
+/*Articulos de la seccion de Reviews*/
+.seccionReview {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: left;
+  padding-bottom: 10px; }
+  .seccionReview article {
+    background-color: black;
+    padding: 10px;
+    margin: 10px 5px;
+    width: 85%;
+    border: solid 4px white; }
+    .seccionReview article p {
+      padding: 0px 5px;
+      margin-left: 5px;
+      margin-bottom: 0px; }
+    .seccionReview article img {
+      width: 300px;
+      height: 200px;
+      float: left;
+      margin-right: 15px; }
+
+.tituloReview {
+  color: #36ebf8;
+  font-size: 34px; }
+
+.puntaje {
+  font-size: 33px;
+  color: #ffd54a;
+  margin-top: -10px; }
+
+.fechaReview {
+  font-size: 10px;
+  color: gray; }
+
+.resumenReview {
+  color: white;
+  font-size: 15px; }
+
+/*Fin de la seccion Reviews*/
+/*Articulos de la seccion de Hardware y se aplica GRID*/
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: center; }
+  .grilla div {
+    background-color: black;
+    padding: 10px;
+    margin: 10px 5px;
+    border: solid 4px white;
+    max-width: 550px;
+    max-height: 300px; }
+    .grilla div p {
+      padding: 2px;
+      text-align: left;
+      margin-bottom: 0px; }
+  .grilla img {
+    max-width: 370px;
+    max-height: 200px; }
+
+/*Fin de la seccion de Articulos de Hardware*/
+/*Articulos de la seccion Dispositivos*/
+.seccionDispositivos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  background-color: black;
+  width: 100%;
+  height: 900px;
+  align-content: space-around; }
+  .seccionDispositivos article {
+    background-color: black;
+    padding: 10px;
+    margin: 10px 5px;
+    width: 400px;
+    border: solid 4px white; }
+    .seccionDispositivos article img {
+      width: 370px;
+      height: 200px; }
+    .seccionDispositivos article p {
+      padding: 5px;
+      text-align: left;
+      margin-bottom: 0px; }
+
+/*Fin de la seccion de dispositivos*/
+/*Animaciones*/
+@keyframes zoomArticle {
+  0% {
+    transform: scale(1, 1); }
+  100% {
+    transform: scale(1.2, 1.2); } }
+
+@keyframes zoomNav {
+  0% {
+    transform: scale(1, 1); }
+  100% {
+    transform: scale(1.2, 1.2); } }
+
+/*Modificadores de estilos de Bootstrap*/
+.carousel {
+  margin-bottom: 1rem; }
+
+.carousel-inner {
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+  margin-left: 5%;
+  max-height: 550px; }
+
+.carousel-item img {
+  width: 95%;
+  max-height: 550px;
+  filter: brightness(60%); }
+
+*, ::after, ::before {
+  box-sizing: content-box; }
+
+hr {
+  margin: 0px;
+  color: white;
+  opacity: unset; }
+
+.sliderTitulo {
+  color: #36ebf8;
+  font-size: 40px;
+  margin-top: 180px; }
+
+.sliderFecha {
+  font-size: 15px;
+  color: white; }
+
+p {
+  margin-bottom: 0px; }
+
+ul {
+  margin-bottom: 0; }
+
+/*Fin de bootstrap*/
+/*Estilo Boxed de la web*/
+* {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+body {
+  text-align: center;
+  background-image: url("../multimedia/fondo.jpg");
+  background-repeat: round;
+  background-position: center center;
+  background-size: auto;
+  /*Se aplica Boxed al body*/
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto; }
+
+main {
+  background-color: black; }
+
+table {
+  border: solid;
+  background-color: white; }
+
+/*fin del boxed*/
+/* Estilos que se aplican a TODOS los articulos de la web*/
+.tituloArticulo {
+  color: #36ebf8; }
+
+.fechaArticulo {
+  font-size: 10px;
+  color: gray; }
+
+.resumen {
+  color: white;
+  font-size: 13px; }
+
+.tituloSeccion {
+  color: #4bd687;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  padding-top: 10px;
+  font-size: 45px; }
+
+ol li {
+  color: red; }
+
+.superior {
+  background-image: url("../multimedia/superior.png");
+  background-repeat: no-repeat;
+  background-position: 50% 56%;
+  background-size: cover;
+  color: white; }
+
+/*Animacion y estilo del Titulo*/
+.impact a {
+  color: white; }
+
+.impact img {
+  height: 200px;
+  width: 400px;
+  margin-top: -85px;
+  margin-bottom: -80px;
+  text-align: center; }
+
+.google {
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 1px; }
+
+/*Fin del Titulo*/
+/*Barra de Navegacion*/
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Staatliches', cursive; }
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+    margin: 0px 40px; }
+  .navbar a:hover {
+    background-color: #00ccff;
+    animation: zoomNav 1s forwards; }
+
+/*fin de los elementos del navegador*/
+/*Titulos dentro del main*/
+h3 {
+  color: #4bd687;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 1px;
+  background-color: black;
+  margin-bottom: 0px;
+  padding-top: 6px; }
+
+header h3 {
+  color: #4bd687;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 1px; }
+
+/*Estilo de parrafos*/
+p {
+  color: #ffcd71;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold; }
+
+.titulo {
+  color: #4bd687;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  padding-top: 10px;
+  font-size: 45px; }
+
+/*seccion de articulos del index*/
+.padre-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  background-color: black;
+  width: 100%;
+  height: 900px;
+  padding-bottom: 30px; }
+  .padre-flex article {
+    background-color: black;
+    padding: 10px;
+    margin: 20px 5px;
+    width: 300px;
+    height: 232px;
+    border: solid 4px white; }
+    .padre-flex article img {
+      width: 290px;
+      height: 140px; }
+    .padre-flex article p {
+      padding: 10px;
+      text-align: left; }
+  .padre-flex article:hover {
+    animation-name: zoomArticle;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards; }
+
+/*Fin de la seccion de articulos del index*/
+/*Banner superior de noticias*/
+.row {
+  width: 100%;
+  margin: 0px;
+  --bs-gutter-x: 0;
+  text-align: center;
+  margin-left: 0px; }
+
+.banner {
+  padding-bottom: 30px; }
+
+.container {
+  width: auto;
+  padding: 0px;
+  padding-bottom: 5px; }
+
+.imagebox {
+  background: black;
+  padding: 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 300px; }
+  .imagebox img {
+    opacity: 1;
+    transition: 0.5s opacity;
+    filter: brightness(60%);
+    height: 300px;
+    width: 99%; }
+
+.imagebox .imagebox-desc {
+  bottom: 0px;
+  color: #36ebf8;
+  font-size: 25px;
+  left: 0px;
+  padding-right: 0px;
+  padding-left: 12px;
+  position: absolute;
+  transition: 0.5s padding;
+  text-align: center;
+  width: 95%;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  top: 30%; }
+
+.imagebox:hover img {
+  opacity: 0.7; }
+
+.imagebox:hover .imagebox-desc {
+  padding-top: 5%; }
+
+/*Banner inferior de noticias */
+.imageboxBottom {
+  background: black;
+  padding: 0px;
+  position: relative;
+  text-align: center;
+  width: 99%;
+  height: 250px; }
+  .imageboxBottom img {
+    opacity: 1;
+    transition: 0.5s opacity;
+    filter: brightness(60%);
+    height: 250px;
+    width: 100%; }
+
+.imageboxBottom .imagebox-desc {
+  bottom: 0px;
+  color: #36ebf8;
+  font-size: 25px;
+  left: 0px;
+  padding-right: 0px;
+  padding-left: 12px;
+  position: absolute;
+  transition: 0.5s padding;
+  text-align: center;
+  width: 95%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  top: 30%; }
+
+.imageboxBottom:hover img {
+  opacity: 0.7; }
+
+.imageboxBottom:hover .imagebox-desc {
+  padding-top: 5%; }
+
+/*Fin de los Banners*/
+/*Seccion Review del Index*/
+.reviewIndex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: left;
+  padding-bottom: 30px; }
+  .reviewIndex p {
+    padding: 0px 5px;
+    margin-left: 5px;
+    margin-bottom: 0px; }
+  .reviewIndex img {
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin-right: 15px; }
+
+.review {
+  background-color: black;
+  padding: 10px;
+  margin: 10px 5px;
+  width: 85%;
+  border: solid 4px white; }
+
+/*Modificadores*/
+.review--destacada {
+  border: solid 5px #ffcd71;
+  width: 87%;
+  padding: 20px; }
+
+/*Elementos*/
+.review__titulo {
+  color: #36ebf8;
+  font-size: 34px; }
+
+.review__puntaje {
+  font-size: 33px;
+  color: #ffcd71;
+  margin-top: -10px; }
+
+.review__fecha {
+  font-size: 11px;
+  color: gray; }
+
+.review__resumen {
+  color: white;
+  font-size: 15px; }
+
+/*Seccion Mas Gaming del Index*/
+.gamingIndex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: left;
+  padding-bottom: 30px; }
+  .gamingIndex p {
+    padding: 5px 20px;
+    margin-left: 20px; }
+  .gamingIndex img {
+    width: 240px;
+    height: 170px;
+    float: left;
+    margin-right: 15px; }
+
+.art {
+  background-color: black;
+  padding: 10px;
+  margin: 10px 5px;
+  width: 90%;
+  border: solid 4px white; }
+
+/*Elementos*/
+.art__titulo {
+  color: #36ebf8;
+  font-size: 20px; }
+
+.art__fecha {
+  font-size: 11px;
+  color: gray; }
+
+.art__resumen {
+  color: white;
+  font-size: 15px; }
+
+/*Mobile*/
+@media (min-width: 51px) and (max-width: 480px) {
+  * {
+    margin: 0 0;
+    padding: 0 0; }
+  body {
+    text-align: center;
+    background-image: url("../multimedia/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /*Se aplica Boxed al body*/
+    width: 100%;
+    max-width: 480px;
+    margin: 0 0;
+    padding: 0  0;
+    position: absolute; }
+  .impact a {
+    color: white; }
+  .impact img {
+    height: 200px;
+    width: 300px;
+    margin-top: -67px;
+    margin-bottom: -80px;
+    text-align: center; }
+  /*Articulos del home*/
+  .carousel-item > img {
+    max-height: 146px; }
+  .padre-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: black;
+    width: 100vw;
+    height: auto;
+    padding-bottom: 30px; }
+  .padre-flex article {
+    background-color: black;
+    padding: 10px;
+    margin: 20px 5px;
+    max-width: 300px;
+    border: solid 4px white; }
+  .padre-flex article img {
+    max-width: 290px;
+    max-height: 140px; }
+  .padre-flex article p {
+    padding: 10px;
+    text-align: left; }
+  /*Articulos de seccion gaming*/
+  .seccionGaming {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px; }
+  .seccionGaming article {
+    background-color: black;
+    padding: 10px;
+    margin: 10px 5px;
+    width: 80%;
+    border: solid 4px white; }
+  .seccionGaming article p {
+    padding: 5px 20px;
+    margin-left: auto; }
+  .seccionGaming article img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-right: 30%; }
+  /*css del navegador*/
+  .navbar {
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Staatliches', cursive; }
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+    margin: 0px 10px; }
+  /*Fin del nav*/
+  /*se esconde el aside, ya que se pretende usar un popup para el formulario de recibir noticias*/
+  aside {
+    display: none; }
+  /*empieza el footer*/
+  footer {
+    width: 100%;
+    margin-bottom: -20px;
+    background: black;
+    background: linear-gradient(180deg, black 50%, #2d2d2d 100%); }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: auto; }
+  footer li {
+    margin: 10px 0px;
+    text-align: left; }
+  /*termina el footer*/
+  /*grilla de seccion Hardware*/
+  .grilla {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
+    justify-items: center; }
+  .grilla div {
+    background-color: black;
+    padding: 10px;
+    margin: 10px 5px;
+    border: solid 4px white;
+    max-width: 550px;
+    max-height: 400px; }
+  .grilla img {
+    max-width: 330px;
+    max-height: 200px; }
+  /*Articulos de la seccion Dispositivos*/
+  .seccionDispositivos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    align-content: space-around; }
+  .seccionDispositivos article {
+    background-color: black;
+    padding: 10px;
+    margin: 10px 5px;
+    width: 100%;
+    border: solid 4px white; }
+  .seccionDispositivos article img {
+    width: 95%;
+    height: 200px; }
+  .seccionDispositivos article p {
+    padding: 0px;
+    text-align: left;
+    margin-bottom: 4px; }
+  /*Fin de la seccion de dispositivos*/
+  /*Seccion Review del Index*/
+  .reviewIndex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: left;
+    padding-bottom: 10px; }
+  .reviewIndex p {
+    padding: 0px 5px;
+    margin-left: 5px;
+    margin-bottom: 0px; }
+  .reviewIndex img {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-right: auto;
+    margin-left: 4px; }
+  .review {
+    background-color: black;
+    padding: 10px;
+    margin: 10px 5px;
+    width: 85%;
+    border: solid 4px white; }
+  /*Modificadores*/
+  .review--destacada {
+    border: solid 3px #ffcd71;
+    width: 87%;
+    padding: 10px; }
+  /*Elementos*/
+  .review__titulo {
+    color: #36ebf8;
+    font-size: 34px; }
+  .review__puntaje {
+    font-size: 33px;
+    color: #ffcd71;
+    margin-top: -10px; }
+  .review__fecha {
+    font-size: 11px;
+    color: gray; }
+  .review__resumen {
+    color: white;
+    font-size: 15px; }
+  /*Fin de la seccion Reviews del index*/
+  .gamingIndex img {
+    width: 240px;
+    height: 170px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 40px; } }
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 481px) {
+  .body {
+    text-align: center;
+    background-image: url("../multimedia/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /*Se aplica Boxed al body*/
+    max-width: 540px;
+    margin: 0 auto; }
+  .carousel-item > img {
+    height: 400px; }
+  .impact a {
+    color: white; }
+  .impact img {
+    height: 200px;
+    width: 400px;
+    margin-top: -85px;
+    margin-bottom: -80px;
+    text-align: center; }
+  /*Articulos del home*/
+  .padre-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px; }
+  .padre-flex article {
+    background-color: black;
+    padding: 10px;
+    margin: 20px 5px;
+    max-width: 300px;
+    border: solid 4px white; }
+  .padre-flex article img {
+    max-width: 290px;
+    max-height: 140px; }
+  .padre-flex article p {
+    padding: 10px;
+    text-align: left; }
+  /*css del navegador*/
+  .navbar {
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Staatliches', cursive; }
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+    margin: 0px 10px; }
+  /*Fin del nav*/
+  /*empieza el footer*/
+  footer ul {
+    background: black;
+    background: linear-gradient(180deg, black 50%, #2d2d2d 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: auto; }
+  footer .widget_text {
+    margin: auto; }
+  footer li {
+    margin: 10px 0px;
+    text-align: left; }
+  /*termina el footer*/
+  /*grilla de seccion Hardware*/
+  .grilla {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
+    justify-items: center; }
+  /*Articulos de seccion Gaming*/
+  .seccionGaming {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px; }
+  .seccionGaming article {
+    background-color: black;
+    padding: 10px;
+    margin: 10px 5px;
+    width: 80%;
+    border: solid 4px white; }
+  .seccionGaming article p {
+    padding: 5px 20px;
+    margin-left: auto; }
+  .seccionGaming article img {
+    height: auto;
+    width: 50%;
+    margin-bottom: 5px;
+    /*width: 240px;
+        height: 170px;*/ }
+  /*Articulos de la seccion de Reviews*/
+  .seccionReview {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: left;
+    padding-bottom: 10px; }
+  .seccionReview article {
+    background-color: black;
+    padding: 10px;
+    margin: 10px 5px;
+    width: 85%;
+    border: solid 4px white; }
+  .seccionReview article p {
+    padding: 5px 5px;
+    margin-left: 5px; }
+  .seccionReview article img {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-right: auto;
+    padding-bottom: 2px; }
+  .tituloReview {
+    color: #36ebf8;
+    font-size: 34px; }
+  .puntaje {
+    font-size: 33px;
+    color: #ffd54a;
+    margin-top: -10px; }
+  .fechaReview {
+    font-size: 10px;
+    color: gray; }
+  .resumenReview {
+    color: white;
+    font-size: 15px; }
+  /*Fin de la seccion Reviews*/
+  /*Articulos de la seccion Dispositivos*/
+  .seccionDispositivos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    align-content: space-around; }
+  .seccionDispositivos article {
+    background-color: black;
+    padding: 10px;
+    margin: 10px 5px;
+    width: 85%;
+    border: solid 4px white; }
+  .seccionDispositivos article img {
+    width: 65%;
+    height: 200px; }
+  .seccionDispositivos article p {
+    padding: 0px;
+    text-align: left;
+    margin-bottom: 4px;
+    font-size: 1.2em; }
+  /*Fin de la seccion de dispositivos*/
+  /*Seccion Review del Index*/
+  .reviewIndex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: left;
+    padding-bottom: 10px; }
+  .reviewIndex p {
+    padding: 0px 5px;
+    margin-left: 5px;
+    margin-bottom: 0px; }
+  .reviewIndex img {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-right: auto;
+    margin-left: 4px;
+    padding-bottom: 2px; }
+  .review {
+    background-color: black;
+    padding: 10px;
+    margin: 10px 5px;
+    width: 85%;
+    border: solid 4px white; }
+  /*Modificadores*/
+  .review--destacada {
+    border: solid 5px #ffcd71;
+    width: 87%;
+    padding: 20px; }
+  /*Elementos*/
+  .review__titulo {
+    color: #36ebf8;
+    font-size: 34px; }
+  .review__puntaje {
+    font-size: 33px;
+    color: #ffcd71;
+    margin-top: -10px; }
+  .review__fecha {
+    font-size: 11px;
+    color: gray; }
+  .review__resumen {
+    color: white;
+    font-size: 15px; }
+  /*Fin de la seccion Reviews del index*/
+  .gamingIndex img {
+    width: 240px;
+    height: 170px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px; } }

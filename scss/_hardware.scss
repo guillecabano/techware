@@ -1,0 +1,29 @@
+/*Articulos de la seccion de Hardware y se aplica GRID*/
+
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    div {
+        background-color: black;
+        padding: 10px;
+        margin: 10px 5px;
+        border: solid 4px white;
+        max-width: 550px;
+        max-height: 300px;
+        p {
+            padding: 2px;
+            text-align: left;
+            margin-bottom: 0px;
+        }
+    }
+    img {
+        max-width: 370px;
+        max-height: 200px;
+    }
+}
+
+/*Fin de la seccion de Articulos de Hardware*/

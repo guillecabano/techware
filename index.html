@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--SEO-->
+    <!--Keywords-->
+    <meta name="keywords" content="techware, gaming, tecnologia, review, reseñas, juegos, pc, hardware, argentina, dispositivos, asus, msi, nintendo, playstation, xbox, consolas, hardware, noticias">
+    <!--Titulo-->
+    <title>Techware - Tu pagina web de Tecnologia, Juegos y Reviews</title>
+    <!--Descripcion-->
+    <meta name="description" content="Techware, es una web enfocada en darte todas las novedades y noticias del mundo gaming, tecnología, hardware y más!">
+    <!--Fin de SEO-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!--Bootstrap y css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> <!--Cabecera del sitio-->
+        <section class="superior">
+            <h1 class="impact"><a href="index.html"><img src="./multimedia/logo1.png" alt="Techware"></a></h1>
+            <h2 class="google">Tu sitio de tecnologia y gaming</h2>
+            <hr>
+        </section>
+        <!--Subtitulo y navegador del sitio-->
+        <h3>Visita nuestras diferentes secciones!</h3>
+        <div id="header">
+            <!--Menu de navegacion del sitio-->
+            <nav class="navbar">
+                <a href="index.html">Pagina Principal</a>
+                <a href="paginas/gaming.html">Gaming</a>
+                <a href="paginas/hardware.html">Hardware</a>
+                <a href="paginas/review.html">Reviews</a>
+                <a href="paginas/dispositivos.html">Dispositivos</a>
+            </nav>
+            <hr>
+            <!--Fin del menu-->
+    </header>
+
+    <!--Contenido principal del sitio-->
+    <main> 
+    <!--Slider Principal-->
+    <h2 class="tituloSeccion">NOVEDADES!!!</h2>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner" >
+          <div class="carousel-item active">
+            <img src="./multimedia/sliders/nintendo.jpg" class="d-block w-100 " alt="nintendo" >
+            <div class="carousel-caption d-none d-md-block">
+                <p class="sliderTitulo">Se filtra el precio de la nueva y supuesta Nintendo Switch Pro</p>
+                <p class="sliderFecha">03/06/2021</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./multimedia/sliders/msi.jpg" class="d-block w-100 " alt="msi" >
+            <div class="carousel-caption d-none d-md-block">
+            <p class="sliderTitulo">Anunciadas las nuevas MSI RTX 3070 Ti y 3080 Ti Suprim, Gaming Trio y Ventus 3X</p>
+            <p class="sliderFecha">02/06/2021</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./multimedia/sliders/asus.jpg" class="d-block w-100 " alt="asus" >
+            <div class="carousel-caption d-none d-md-block">
+            <p class="sliderTitulo">Asus presentó sus nuevas laptops con procesadores AMD Ryzen 5000</p>
+            <p class="sliderFecha">02/06/2021</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./multimedia/sliders/amd.jpg" class="d-block w-100" alt="amd"  >
+            <div class="carousel-caption d-none d-md-block">
+            <p class="sliderTitulo">AMD presenta FidelityFX Super Resolution para competir con DLSS de Nvidia</p>
+            <p class="sliderFecha">01/06/2021</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <hr>
+    
+    <!--Fin del Slider-->
+
+    <h2 class="tituloSeccion">ULTIMAS NOTICIAS DEL GAMING</h2>
+    <section class="padre-flex">
+        <article>
+            <img src="multimedia/gaming/Capcom.jpg" alt="capcom">
+            <p>E3 2021: Capcom anuncia DLC de Resident Evil Village, Monster Hunter Rise 3.1, gameplay de The Great Ace Attorney y más</p>
+        </article>
+        <article>
+            <img src="multimedia/gaming/Diablo.jpg" alt="diablo">
+            <p>Diablo(R) II: Resurrected vuelve a abrir las puertas del Infierno el 23 de septiembre</p>
+        </article>
+        <article>
+            <img src="multimedia/gaming/Doom.jpg" alt="doom">
+            <p>E3 2021: NVIDIA anuncia que Rainbow Six Siege incorpora DLSS y que DOOM Eternal tendrá Ray Tracing y DLSS</p>
+        </article>
+        <article>
+            <img src="multimedia/gaming/Season4.jpg" alt="cod">
+            <p>Todo lo que necesitas saber sobre la Temporada Cuatro de Call of Duty: Black Ops Cold War y Call of Duty: Warzone</p>
+        </article>
+        <article>
+            <img src="multimedia/gaming/The-Dark-Pictures.jpg" alt="dark pictures">
+            <p>E3 2021: Bandai Namco dio más datos sobre The Dark Pictures Anthology: House of Ashes</p>
+        </article>
+        <article>
+            <img src="multimedia/gaming/The-Elder.jpg" alt="elder">
+            <p>Disponible The Elder Scrolls Online en Xbox Series X|S y PS5</p>
+        </article>
+        <article>
+            <img src="multimedia/gaming/Yield-Guiedl.jpg" alt="yield">
+            <p>Yield Guild Games recibe nueva inversión para NFTs y juegos para ganar.</p>
+        </article>
+        <article>
+            <img src="multimedia/gaming/Zelda.jpg" alt="zelda">
+            <p>E3 2021: Nintendo lanza nuevo tráiler de Legend of Zelda: BoW 2, presenta Metroid Dread, Mario Party Superstars y otros títulos</p>
+        </article>
+        <article>
+            <img src="multimedia/gaming/Godfall.jpg" alt="godfall">
+            <p>E3 2021: Gearbox anuncia Godfall para PS4, Tiny Tina’s Wonderlands y Tribes of Midgard</p>
+        </article>
+    </section>
+    <hr>
+    <!--Contenedores de articulos-->
+
+    <h2 class="tituloSeccion">HARDWARE Y DISPOSITIVOS</h2>
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg">
+                <div class="imagebox">
+                    <img src="./multimedia/dispositivos/Lenovo.jpg"  class="category-banner img-responsive" alt="lenovo">
+                    <span class="imagebox-desc">Lenovo presenta su nueva tablet Tab P11</span>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div class="imagebox">
+                    <img src="./multimedia/dispositivos/Xiaomi.jpg"  class="category-banner img-responsive" alt="xiaomi">
+                    <span class="imagebox-desc">El gigante tecnológico chino, Xiaomi, anunció su llegada a la Argentina de la mano de Etercor, su distribuidor oficial</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--Banner inferior-->
+        <div class="container">
+            <div class="row">
+              <div class="col-lg">
+                <div class="imageboxBottom">
+                    <img src="./multimedia/hardware/nintendo.jpg"  class="category-banner img-responsive" alt="nintendo">
+                    <span class="imagebox-desc">Se filtra el precio de la nueva y supuesta Nintendo Switch Pro</span>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div class="imageboxBottom">
+                    <img src="./multimedia/hardware/msi-rtx.jpg"  class="category-banner img-responsive" alt="msi">
+                    <span class="imagebox-desc">Anunciadas las nuevas MSI RTX 3070 Ti y 3080 Ti Suprim, Gaming Trio y Ventus 3X</span>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div class="imageboxBottom">
+                    <img src="./multimedia/hardware/fury.jpg"  class="category-banner img-responsive" alt="fury">
+                    <span class="imagebox-desc">Kingston FURY, el nuevo nombre de las memorias RAM de rendimiento de Kingston Technology</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr>
+    <!--Fin de contenedores-->
+
+        <!--Seccion de Reviews-->
+
+        <section>
+          <h2 class="titulo">RESEÑAS DE VIDEOJUEGOS</h2>
+        <section class="reviewIndex"> 
+            <article class="review--destacada"> <!-- Bloque -->
+                <img src="./multimedia/review/xenoblade.jpg" alt="xenoblade">
+                <p class="review__titulo">Xenoblade Chronicles: Definitive Edition</p>
+                <p class="review__puntaje">Puntaje TW: 9/10</p>
+                <p class="review__fecha">05/07/2021</p>
+                <p class="review__resumen">Shulk celebra el décimo aniversario de su inolvidable aventura con una cuidada y ambiciosa remasterización de uno de los mejores JRPG de la última década.</p>
+            </article>
+            <article class="review"><!-- Bloque -->
+                <img src="./multimedia/review/scarlet.jpg" alt="scarlet">
+                <p class="review__titulo">Scarlet Nexus</p>
+                <p class="review__puntaje">Puntaje TW: 7.9/10</p>
+                <p class="review__fecha">05/07/2021</p>
+                <p class="review__resumen">El RPG de acción de Bandai Namco Studios nos ha atrapado por su trama, por un sistema de combate original y por ser una auténtica delicia visual.</p>
+            </article>
+            <article class="review"><!-- Bloque -->
+                <img src="./multimedia/review/legend.jpg" alt="legend">
+                <p class="review__titulo">Legend of Mana</p>
+                <p class="review__puntaje">Puntaje TW: 7.5/10</p>
+                <p class="review__fecha">04/07/2021</p>
+                <p class="review__resumen">Legend of Mana vuelve con mejores gráficos, mejoras en la banda sonora y otros cambios, entre ellos una traducción al español.</p>
+            </article>
+            <article class="review"><!-- Bloque -->
+              <img src="./multimedia/review/metro.jpg" alt="metro">
+              <p class="review__titulo">Metro Exodus Complete Edition</p>
+              <p class="review__puntaje">Puntaje TW: 8/10</p>
+              <p class="review__fecha">04/07/2021</p>
+              <p class="review__resumen">Después de su paso por PC, esta edición mejorada llega a consolas con una adaptación que poco tiene que envidiar.</p>
+          </article>
+        </section>
+        <hr>
+        <!--Fin seccion de Reviews-->
+      
+        <!--Seccion Mas Gaming-->
+
+        <h2 class="titulo">MAS NOTICIAS DE VIDEOJUEGOS!!!</h2>
+        <section class="gamingIndex"> 
+            <article class="art"><!-- Bloque -->
+                <img src="./multimedia/noticias/Guardianes.jpg" alt="guardianes">
+                <p class="art__titulo">E3 2021: Square Enix anuncia Guardianes de la Galaxia, Hitman Sniper: The Shadows, Life is Strange True Colors y otros títulos más</p>
+                <p class="art__fecha">13/06/2021</p>
+                <p class="art__resumen">En el marco de la E3 2021, Square Enix y Eidos Montreal anunciaron nuevos juegos como Marvel’s Guardianes de la Galaxia, Hitman Sniper: The Shadows, Life is Strange True Colors y otros títulos...</p>
+            </article>
+            <article class="art"><!-- Bloque -->
+                <img src="./multimedia/noticias/Starfield.jpg" alt="starfield">
+                <p class="art__titulo">E3 2021: Xbox anuncia Starfield, Diablo II Resurrected, Halo Infinite, Age of Empires 4, Forza Horizon 5 y muchos juegos más</p>
+                <p class="art__fecha">13/06/2021</p>
+                <p class="art__resumen">Durante su conferencia en la E3 2021, Microsoft anunció 30 juegos de los cuales 27 llegarán directamente con Xbox Game Pass, y todos optimizados para Xbox Series X/S</p>
+            </article>
+            <article class="art"><!-- Bloque -->
+                <img src="./multimedia/noticias/Battlefield.jpg" alt="battlefield">
+                <p class="art__titulo">E3 2021: El tráiler de Gameplay de Battlefield 2042 debuta en el Showcase de Xbox</p>
+                <p class="art__fecha">13/06/2021</p>
+                <p class="art__resumen">Hoy, en el showcase de Xbox & Bethesda Games, EA y DICE presentaron el esperado avance de gameplay de , que se puede ver en el canal oficial de YouTube de Battlefield aquí.</p>
+            </article>
+            <article class="art"><!-- Bloque -->
+                <img src="./multimedia/noticias/Diablo-II.jpg" alt="diablo">
+                <p class="art__titulo">E3 2021: Diablo II: Resurrected llega este 23 de septiembre de 2021</p>
+                <p class="art__fecha">13/06/2021</p>
+                <p class="art__resumen">El 23 de septiembre, los jugadores de todo el mundo podrán salvar Santuario de una terrible calamidad en Diablo II: Resurrected, la versión remasterizada definitiva de Diablo II y su expansión...</p>
+            </article>
+        </section>
+        <hr>
+
+    </main>
+
+<!--Pie de Pagina del sitio: en Construccion-->
+    <hr>
+    <footer> 
+        <nav>
+            <ul>
+                <li><a href="index.html">Pagina Principal</a></li>
+                <li><a href="https://www.facebook.com/"  target="_blank">Redes Sociales</a></li>
+                <li><a href="index.html">Sobre Nosotros</a></li>
+                <li><a href="index.html">Contacto</a></li>
+                <li><a href="index.html">Terminos y condiciones</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+<!--Scripts Javascript-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

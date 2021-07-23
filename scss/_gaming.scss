@@ -1,0 +1,29 @@
+/*Articulos de la seccion de Gaming*/
+
+.seccionGaming {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: left;
+    padding-bottom: 10px;
+    article {
+        background-color: black;
+        padding: 10px;
+        margin: 10px 5px;
+        width: 80%;
+        border: solid 4px white;
+        p {
+            padding: 5px 20px;
+            margin-left: 20px;
+        }
+        img {
+            width: 240px;
+            height: 170px;
+            float: left;
+            margin-right: 15px;
+        }
+    }
+}
+
+
+/*Fin de la seccion de Articulos de Gaming*/

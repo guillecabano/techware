@@ -1,0 +1,481 @@
+@import "colores";
+@import "fuentes";
+@import "footer";
+
+//Secciones en sass
+
+@import "gaming";
+@import "reviews";
+@import "hardware";
+@import "dispositivos";
+
+/*Animaciones*/
+
+@keyframes zoomArticle {
+    0% {
+        transform: scale(1,1);
+    }
+    100% {
+        transform: scale(1.2,1.2);
+    }
+}
+
+@keyframes zoomNav {
+    0% {
+        transform: scale(1,1);
+    }
+    100% {
+        transform: scale(1.2,1.2);
+    }
+}
+
+/*Modificadores de estilos de Bootstrap*/
+
+.carousel {
+    margin-bottom: 1rem;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    margin-left: 5%;
+    max-height: 550px;
+}
+
+.carousel-item img {
+    width: 95%;
+    max-height: 550px;
+    filter: brightness(60%);
+}
+
+*, ::after, ::before {
+    box-sizing: content-box;
+}
+
+hr {
+    margin: 0px;
+    color: white;
+    opacity: unset;
+}
+
+.sliderTitulo {
+    color: rgb(54, 235, 248);
+    font-size: 40px;
+    margin-top: 180px;
+}
+
+.sliderFecha {
+    font-size: 15px;
+    color: white;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+/*Fin de bootstrap*/
+
+/*Estilo Boxed de la web*/
+
+* { 
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+body {
+    text-align: center;
+    background-image: url("../multimedia/fondo.jpg");
+    background-repeat:round;
+    background-position:center center;
+    background-size: auto;
+    /*Se aplica Boxed al body*/
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    background-color: black;
+}
+
+table {
+    border: solid;
+    background-color: white;
+}
+
+/*fin del boxed*/
+
+/* Estilos que se aplican a TODOS los articulos de la web*/
+.tituloArticulo {
+    color: $azul;
+}
+
+.fechaArticulo {
+    font-size: 10px;
+    color: gray;
+}
+
+.resumen {
+ color: white;
+ font-size: 13px;
+}
+
+.tituloSeccion {
+    color: $verde;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    padding-top: 10px;
+    font-size: 45px;
+}
+
+ol li {
+    color: red;
+}
+
+//Header
+
+.superior {
+    background-image: url("../multimedia/superior.png");
+    background-repeat:no-repeat;
+    background-position:50% 56%;
+    background-size: cover;
+    color: white;
+}
+
+/*Animacion y estilo del Titulo*/
+
+.impact a {
+    color: white;
+}
+
+.impact img {
+    height: 200px;
+    width: 400px;
+    margin-top: -85px;
+    margin-bottom: -80px;
+    text-align: center;
+}
+
+.google {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 1px;
+}
+
+/*Fin del Titulo*/
+
+/*Barra de Navegacion*/
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(0, 0, 0); 
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Staatliches', cursive;
+    a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 40px;
+        text-decoration: none;
+        margin: 0px 40px;
+    }
+    a:hover {
+        background-color: rgb(0, 204, 255);
+        animation: zoomNav 1s forwards;
+    }
+}
+
+/*fin de los elementos del navegador*/
+
+//Fin del Header
+
+/*Titulos dentro del main*/
+
+h3 { 
+    color: $verde;
+    font-family: $principal;
+    letter-spacing: 1px;
+    background-color: black;
+    margin-bottom: 0px;
+    padding-top: 6px;
+}
+
+header h3 {
+    color: $verde;
+    font-family: $principal;
+    letter-spacing: 1px;
+}
+
+/*Estilo de parrafos*/
+
+p { 
+    color: $amarillo;
+    font-family: $secundaria;
+    font-weight: bold;
+}
+
+.titulo {
+    color: rgb(75, 214, 135);
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    padding-top: 10px;
+    font-size: 45px; }
+
+/*seccion de articulos del index*/
+
+.padre-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: black;
+    width: 100%;
+    height: 900px;
+    padding-bottom: 30px;
+    article {
+        background-color: black;
+        padding: 10px;
+        margin: 20px 5px;
+        width: 300px;
+        height: 232px;
+        border: solid 4px white;
+        img {
+            width: 290px;
+            height: 140px;
+        }
+        p {
+            padding: 10px;
+            text-align: left;
+        }
+    }
+    article:hover {
+        animation-name: zoomArticle;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards
+    }
+}
+
+/*Fin de la seccion de articulos del index*/
+
+/*Banner superior de noticias*/
+
+.row {
+    width: 100%;
+    margin: 0px;
+    --bs-gutter-x: 0;
+    text-align: center;
+    margin-left: 0px;
+}
+
+.banner {
+    padding-bottom: 30px;
+}
+
+.container {
+    width: auto;
+    padding: 0px;
+    padding-bottom: 5px;
+}
+
+.imagebox {
+    background: black;
+    padding: 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    img {
+        opacity: 1;
+        transition: 0.5s opacity;
+        filter: brightness(60%);
+        height: 300px;
+        width: 99%;
+    }
+}
+
+.imagebox .imagebox-desc {
+    bottom: 0px;
+    color: rgb(54, 235, 248);
+    font-size: 25px;
+    left: 0px;
+    padding-right: 0px;
+    padding-left: 12px;
+    position: absolute;
+    transition: 0.5s padding;
+    text-align: center;
+    width: 95%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    top: 30%;
+}
+
+.imagebox:hover img {
+    opacity: 0.7;
+}
+
+.imagebox:hover .imagebox-desc {
+    padding-top: 5%;
+}
+
+/*Banner inferior de noticias */
+
+.imageboxBottom {
+    background: black;
+    padding: 0px;
+    position: relative;
+    text-align: center;
+    width: 99%;
+    height: 250px;
+    img {
+        opacity: 1;
+        transition: 0.5s opacity;
+        filter: brightness(60%);
+        height: 250px;
+        width: 100%;
+    }
+}
+
+.imageboxBottom .imagebox-desc {
+    bottom: 0px;
+    color: $azul;
+    font-size: 25px;
+    left: 0px;
+    padding-right: 0px;
+    padding-left: 12px;
+    position: absolute;
+    transition: 0.5s padding;
+    text-align: center;
+    width: 95%;
+    font-family: $secundaria;
+    font-weight: bold;
+    top: 30%;
+}
+
+.imageboxBottom:hover img {
+    opacity: 0.7;
+}
+
+.imageboxBottom:hover .imagebox-desc {
+    padding-top: 5%;
+}
+
+/*Fin de los Banners*/
+
+/*Seccion Review del Index*/
+
+.reviewIndex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: left;
+    padding-bottom: 30px;
+            p {
+                padding: 0px 5px;
+                margin-left: 5px;
+                margin-bottom: 0px;
+            }
+            img {
+                width: 300px;
+                height: 200px;
+                float: left;
+                margin-right: 15px;
+            }
+}
+
+.review {
+    background-color: black;
+    padding: 10px;
+    margin: 10px 5px;
+    width: 85%;
+    border: solid 4px white;
+}
+
+/*Modificadores*/
+
+.review--destacada {
+    border: solid 5px $amarillo;
+    width: 87%;
+    padding: 20px;
+}
+
+/*Elementos*/
+.review__titulo {
+    color: $azul;
+    font-size: 34px;
+}
+
+.review__puntaje {
+    font-size: 33px;
+    color: $amarillo;
+    margin-top: -10px;
+}
+
+.review__fecha {
+    font-size: 11px;
+    color: gray;
+}
+
+.review__resumen {
+    color: white;
+    font-size: 15px;
+}
+
+/*Seccion Mas Gaming del Index*/
+
+.gamingIndex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: left;
+    padding-bottom: 30px;
+        p {
+        padding: 5px 20px;
+        margin-left: 20px;
+        }
+        img {
+            width: 240px;
+            height: 170px;
+            float: left;
+            margin-right: 15px;
+        }
+}
+
+.art {
+    background-color: black;
+    padding: 10px;
+    margin: 10px 5px;
+    width: 90%;
+    border: solid 4px white;
+}
+
+/*Elementos*/
+
+.art__titulo {
+    color: $azul;
+    font-size: 20px;
+}
+
+.art__fecha {
+    font-size: 11px;
+    color: gray;
+}
+
+.art__resumen {
+    color: white;
+    font-size: 15px;
+}
+
+// Imports sitio responsive
+
+@import "mobile";
+@import "tablet";

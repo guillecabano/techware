@@ -1,0 +1,28 @@
+/*Footer*/
+
+footer {
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(45,45,45,1) 100%);
+    ul {
+        display: flex;
+        justify-content: center ;
+        bottom:0;
+        left:0;
+        li {
+            margin: 20px;
+            a {
+                font-family: 'Roboto Condensed', sans-serif;
+                font-weight: bold;
+                color: rgb(201, 201, 201);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+footer .widget_text {
+        margin: 5px 0 5px 0;
+}
+
+/*Fin del Footer*/
