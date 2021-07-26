@@ -506,6 +506,27 @@ p {
   color: white;
   font-size: 15px; }
 
+/*Seccion nosotros, contacto, terminos y condiciones*/
+.nosotros {
+  color: #36ebf8;
+  font-size: 20px;
+  padding: 4vh 7vh;
+  font-family: "Roboto Condensed", sans-serif; }
+
+.contacto {
+  color: #36ebf8;
+  font-size: 20px;
+  padding: 1vh 7vh;
+  font-family: "Roboto Condensed", sans-serif; }
+
+.campo {
+  padding-bottom: 20px; }
+
+.terminos {
+  color: white;
+  font-size: auto;
+  padding: 0.25vw 5vw; }
+
 /*Mobile*/
 @media (min-width: 51px) and (max-width: 480px) {
   * {

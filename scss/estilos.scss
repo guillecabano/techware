@@ -475,6 +475,32 @@ p {
     font-size: 15px;
 }
 
+/*Seccion nosotros, contacto, terminos y condiciones*/
+
+.nosotros {
+    color: $azul;
+    font-size: 20px;
+    padding: 4vh 7vh;
+    font-family: $secundaria;
+}
+
+.contacto {
+    color: $azul;
+    font-size: 20px;
+    padding: 1vh 7vh;
+    font-family: $secundaria;
+}
+
+.campo {
+    padding-bottom: 20px
+}
+
+.terminos {
+    color: white;
+    font-size: auto;
+    padding: 0.25vw 5vw;
+}
+
 // Imports sitio responsive
 
 @import "mobile";
